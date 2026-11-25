@@ -1,11 +1,11 @@
 /* سيرفس وركر: يخزّن كل ملفات التطبيق محلياً حتى تعمل الواجهة فوراً حتى بلا إنترنت،
    ويخزّن أيضاً نصوص القرآن ومواقيت الصلاة بعد أول مشاهدة لها لتبقى متاحة أوفلاين،
    أما الصوتيات والراديو والفيديو فلا تُخزَّن أبداً (كبيرة الحجم وتحتاج اتصالاً مباشراً) */
-const CACHE = 'yaqeen-v2';
+const CACHE = 'yaqeen-v3';
 const API_CACHE = 'yaqeen-api-v1';
 const CORE = [
   './', './index.html', './manifest.webmanifest',
-  './favicon.png', './icons/icon-192.png', './icons/icon-512.png',
+  './favicon.png', './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-192.png', './icons/maskable-512.png', './privacy.html',
   './yaqeen-mahmoud-helal/yaqeen.css',
   './yaqeen-mahmoud-helal/yaqeen-host.js',
   './yaqeen-mahmoud-helal/yt.html',
