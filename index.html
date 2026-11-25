@@ -545,6 +545,7 @@
     ">
       تم التصميم والتطوير بواسطة: <span style="color: var(--accent); font-weight: 800;">Mahmoud Helal</span>
     </div>
+    <div style="margin-top:12px"><a href="privacy.html" style="color:var(--primary);font-weight:700">سياسة الخصوصية</a></div>
   </footer>
 
   <!-- نافذة قراءة السورة -->
@@ -1880,5 +1881,32 @@ ${body}`;
   <script src="yaqeen-mahmoud-helal/calc-ibadat.js"></script>
   <script src="yaqeen-mahmoud-helal/calc-contract.js"></script>
   <script src="yaqeen-mahmoud-helal/yaqeen-host.js"></script>
+<!-- ضع هذا الكود قبل </body> في index.html -->
+<div id="installBanner" hidden style="position:fixed;inset-inline:12px;bottom:12px;z-index:9999;background:#0d3b2e;color:#fff;border-radius:14px;padding:12px 14px;display:none;align-items:center;gap:10px;font-family:'Cairo',sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.25)">
+  <span id="installText" style="flex:1;font-size:.95rem">ثبّت «يقين المسلم» على شاشتك الرئيسية</span>
+  <button id="installBtn" style="background:#b8913a;color:#fff;border:0;border-radius:10px;padding:8px 14px;font-family:inherit;cursor:pointer">تثبيت</button>
+  <button id="installClose" aria-label="إغلاق" style="background:transparent;color:#fff;border:0;font-size:1.3rem;cursor:pointer">×</button>
+</div>
+<script>
+(function(){
+  var KEY='installBannerDismissed', b=document.getElementById('installBanner'), deferred=null;
+  function standalone(){return window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;}
+  function show(){ if(localStorage.getItem(KEY)||standalone()) return; b.hidden=false; b.style.display='flex'; }
+  function hide(){ b.style.display='none'; try{localStorage.setItem(KEY,'1');}catch(e){} }
+  window.addEventListener('beforeinstallprompt',function(e){ e.preventDefault(); deferred=e; show(); });
+  document.getElementById('installBtn').addEventListener('click',function(){
+    if(deferred){ deferred.prompt(); deferred.userChoice.then(hide); deferred=null; } else { hide(); }
+  });
+  document.getElementById('installClose').addEventListener('click',hide);
+  // iPhone: لا يوجد beforeinstallprompt، نعرض تلميحاً
+  var ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  if(ios && !standalone()){
+    document.getElementById('installText').textContent='لتثبيت التطبيق: اضغط زر المشاركة ثم «إضافة إلى الشاشة الرئيسية»';
+    document.getElementById('installBtn').style.display='none';
+    setTimeout(show,3000);
+  }
+  window.addEventListener('appinstalled',hide);
+})();
+</script>
 </body>
 </html>
