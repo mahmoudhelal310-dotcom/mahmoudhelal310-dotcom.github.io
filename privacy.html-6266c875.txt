@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1b4332">
+<title>سياسة الخصوصية | يقين المسلم</title>
+<style>
+  body{font-family:'Cairo',system-ui,sans-serif;background:#f6f1e6;color:#1c2a24;margin:0;line-height:1.9}
+  main{max-width:760px;margin:0 auto;padding:24px 18px 48px}
+  h1{color:#0d3b2e;font-size:1.6rem} h2{color:#0d3b2e;font-size:1.2rem;margin-top:1.6em}
+  a{color:#0d3b2e} ul{padding-inline-start:1.2em}
+  .en{direction:ltr;text-align:left;border-top:1px solid #e5dcc8;margin-top:2.2em;padding-top:1em}
+</style>
+</head>
+<body>
+<main>
+<h1>سياسة الخصوصية: يقين المسلم</h1>
+<p>آخر تحديث: نوفمبر 2026</p>
+<p>تطبيق «يقين المسلم» لا يطلب إنشاء حساب، ولا يجمع بياناتك الشخصية على خوادم خاصة بنا، ولا يحتوي على إعلانات أو أدوات تحليل أو تتبّع.</p>
+
+<h2>ما يُحفظ على جهازك فقط</h2>
+<p>يحفظ التطبيق إعداداتك داخل متصفحك أو جهازك (التخزين المحلي)، ولا يُرسل إلينا: المظهر (فاتح/داكن)، القارئ المفضّل، علامة القراءة في المصحف، عدّاد التسبيح، الدولة والمدينة المختارة لمواقيت الصلاة، وبعض إعدادات الأقسام. يمكنك حذفها بمسح بيانات الموقع من إعدادات المتصفح أو التطبيق.</p>
+
+<h2>الموقع الجغرافي والبوصلة</h2>
+<p>لا يطلب التطبيق موقعك عند فتحه. عند ضغطك على زر تحديد موقعك في أداة القبلة فقط، يطلب التطبيق إذن الموقع لحساب اتجاه القبلة داخل جهازك. يُحفظ الموقع على جهازك ولا يُرسل إلينا. وقد يطلب إذن حساس الاتجاه (البوصلة) على بعض الأجهزة.</p>
+
+<h2>خدمات خارجية يتصل بها التطبيق</h2>
+<p>لتشغيل المحتوى، يتصل جهازك مباشرة بخدمات خارجية، وقد ترى هذه الخدمات عنوان IP ونوع جهازك كأي موقع عادي:</p>
+<ul>
+  <li>نص القرآن والتفسير: api.alquran.cloud و cdn.jsdelivr.net</li>
+  <li>مواقيت الصلاة: api.aladhan.com</li>
+  <li>التلاوات الصوتية والإذاعات: mp3quran.net وخوادمه، everyayah.com، islamic.network، qurango.net، radiojar.com، assabile.com، وخادم وسيط خاص بنا للإذاعة</li>
+  <li>الفيديو: YouTube (عند تشغيل مقطع فيديو)</li>
+  <li>الخطوط: Google Fonts</li>
+  <li>زر التواصل عبر واتساب (wa.me): يُفتح فقط عند ضغطك عليه</li>
+</ul>
+<p>لكل خدمة سياسة خصوصية خاصة بها، ولا نتحكم فيها.</p>
+
+<h2>الأطفال</h2>
+<p>التطبيق عام ولا يجمع بيانات من أي أحد، بمن فيهم الأطفال.</p>
+
+<h2>التواصل</h2>
+<p>لأي استفسار: <a href="mailto:mahmoudhelal3101@gmail.com">mahmoudhelal3101@gmail.com</a></p>
+
+<section class="en">
+<h1>Privacy Policy: Yaqeen al-Muslim</h1>
+<p>Last updated: November 2026</p>
+<p>The app has no accounts, no ads, no analytics and no tracking. We do not collect your personal data on our own servers.</p>
+<p><strong>Stored on your device only:</strong> theme, preferred reciter, Quran bookmark, tasbeeh counter, selected country and city for prayer times, and similar settings (local storage). They are never sent to us. Clear site data to remove them.</p>
+<p><strong>Location and compass:</strong> only when you tap the locate button in the Qibla tool, the app asks for your location to compute the Qibla direction on your device. It is stored on your device and not sent to us. Some devices also ask for compass sensor permission.</p>
+<p><strong>Third-party services:</strong> your device connects directly to api.alquran.cloud, cdn.jsdelivr.net, api.aladhan.com, mp3quran.net, everyayah.com, islamic.network, qurango.net, radiojar.com, assabile.com, YouTube (when playing a video), Google Fonts, and our own radio proxy. These services can see your IP address and device type, as any website would, and have their own privacy policies. The WhatsApp contact button (wa.me) opens only when you tap it.</p>
+<p><strong>Children:</strong> the app collects no data from anyone, including children.</p>
+<p><strong>Contact:</strong> <a href="mailto:mahmoudhelal3101@gmail.com">mahmoudhelal3101@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
