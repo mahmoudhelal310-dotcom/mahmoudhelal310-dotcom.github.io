@@ -398,7 +398,9 @@
     <div class="bottom-actions">
       <div class="dashboard-card" onclick="openSection('contactSection')"><div class="card-icon" style="font-size:26px">📩</div><div class="card-title">تواصل واقتراحات</div></div>
       <div class="dashboard-card" onclick="installApp()"><div class="card-icon" style="font-size:26px">📲</div><div class="card-title" id="installBtnTxt">تثبيت التطبيق</div></div>
+      <div class="dashboard-card" id="apkCard" style="display:none" onclick="downloadApk()"><div class="card-icon" style="font-size:26px">⬇️</div><div class="card-title">تحميل APK</div></div>
     </div>
+    <div id="apkNote" style="display:none;text-align:center;font-size:.8rem;opacity:.8;margin:6px 12px 0;line-height:1.7">قد يعرض Chrome تنبيهاً أن ملفات APK قد تكون ضارة، اختر «تنزيل على أي حال»، ثم افتح الملف واسمح بالتثبيت من هذا المتصفح.</div>
   </div>
 
   <div class="section-view" id="quranSection">
@@ -1908,5 +1910,24 @@ ${body}`;
   window.addEventListener('appinstalled',hide);
 })();
 </script>
+<script>
+// زر تحميل APK: أندرويد فقط، ويختفي داخل التطبيق المثبّت وداخل متصفحات فيسبوك/انستجرام
+function downloadApk(){
+  var a=document.createElement('a');
+  a.href='https://github.com/mahmoudhelal310-dotcom/mahmoudhelal310-dotcom.github.io/releases/download/v1.0.0/yaqeen-almuslim.apk'; a.rel='noopener';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+(function(){
+  var ua=navigator.userAgent||'';
+  var android=/Android/i.test(ua);
+  var inAppBrowser=/FBAN|FBAV|FB_IAB|Instagram|Messenger|Snapchat/i.test(ua);
+  var installed=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone||(document.referrer||'').indexOf('android-app://')===0;
+  if(android && !inAppBrowser && !installed){
+    var c=document.getElementById('apkCard'), n=document.getElementById('apkNote');
+    if(c) c.style.display=''; if(n) n.style.display='block';
+  }
+})();
+</script>
 </body>
 </html>
+
